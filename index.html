@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ponto do Açaí - Produtos</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>🍧 Ponto do Açaí</h1>
+    <h3>Produtos</h3>
+    <div class="categoria">
+      <h4>Açaís Mix</h4>
+      <div class="produto"><span>Açaí Mix 500ml</span><button onclick="adicionar('Açaí Mix 500ml')">Adicionar</button></div>
+      <div class="produto"><span>Açaí Mix 700ml</span><button onclick="adicionar('Açaí Mix 700ml')">Adicionar</button></div>
+    </div>
+    <div class="categoria">
+      <h4>Lanches</h4>
+      <div class="produto"><span>X-Tudo</span><button onclick="adicionar('X-Tudo')">Adicionar</button></div>
+    </div>
+    <div class="categoria">
+      <h4>Bebidas</h4>
+      <div class="produto"><span>Suco Natural</span><button onclick="adicionar('Suco Natural')">Adicionar</button></div>
+    </div>
+    <br>
+    <button onclick="irParaCarrinho()">Finalizar Pedido</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
