@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ponto do Açaí - Produtos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🍧 Ponto do Açaí</h1>
+    <h2>Produtos</h2>
+
+    <div class="categoria">
+      <h3>Açaís Mix</h3>
+      <div class="produto">
+        <p>Açaí Mix 500ml - R$18,00</p>
+        <button onclick="adicionarCarrinho('Açaí Mix 500ml')">Adicionar</button>
+      </div>
+      <div class="produto">
+        <p>Açaí Mix 700ml - R$22,00</p>
+        <button onclick="adicionarCarrinho('Açaí Mix 700ml')">Adicionar</button>
+      </div>
+    </div>
+
+    <div class="categoria">
+      <h3>Lanches</h3>
+      <div class="produto">
+        <p>X-Tudo - R$14,00</p>
+        <button onclick="adicionarCarrinho('X-Tudo')">Adicionar</button>
+      </div>
+    </div>
+
+    <div class="categoria">
+      <h3>Bebidas</h3>
+      <div class="produto">
+        <p>Suco Natural - R$7,00</p>
+        <button onclick="adicionarCarrinho('Suco Natural')">Adicionar</button>
+      </div>
+    </div>
+
+    <button onclick="finalizarPedido()">Finalizar Pedido</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
