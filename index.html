@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Confirmação de Pedido</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧾 Confirmar Pedido</h1>
+
+    <div class="section">
+      <h3>Itens do Pedido</h3>
+      <ul id="itens-pedido"></ul>
+      <p id="total"></p>
+    </div>
+
+    <div class="section">
+      <h3>Endereço de Entrega</h3>
+      <p id="endereco">Rua Exemplo, 123 - Centro, Maceió/AL</p>
+      <button onclick="editarEndereco()">Editar Endereço</button>
+    </div>
+
+    <div class="section">
+      <h3>Entrega ou Retirada?</h3>
+      <label><input type="radio" name="tipo" value="entrega" checked /> Entrega (R$5,00)</label><br/>
+      <label><input type="radio" name="tipo" value="retirada" /> Retirar no Local</label>
+    </div>
+
+    <div class="section">
+      <h3>Observações</h3>
+      <textarea placeholder="Ex: sem granola, entregar gelado..."></textarea>
+    </div>
+
+    <button onclick="confirmarPedido()">Confirmar Pedido</button>
+  </div>
+  <script src="src/script.js"></script>
+</body>
+</html>
